@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { inter, roboto_mono } from "../style/fonts";
+import { ThemeProvider } from "./providers";
 import "../style/globals.css";
 
 
@@ -14,8 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${roboto_mono.variable}`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${roboto_mono.variable}`}>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem={true}
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
