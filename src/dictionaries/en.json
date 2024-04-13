@@ -1,0 +1,20 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "lang": "Language"
+  },
+
+  "pages": {
+    "home": {
+      "title": "Managing Internationalization in Next.js",
+      "content": "Learn how to set up internationalization in your Next.js application."
+    }
+  },
+
+  "components": {
+    "button": {
+      "home": "Home"
+    }
+  }
+}

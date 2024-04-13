@@ -1,0 +1,20 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "lang": "Langue"
+  },
+
+  "pages": {
+    "home": {
+      "title": "Gérer l'internationalisation dans Next.js",
+      "content": "Apprenez à configurer l'internationalisation dans votre application Next.js."
+    }
+  },
+
+  "components": {
+    "button": {
+      "home": "Accueil"
+    }
+  }
+}
