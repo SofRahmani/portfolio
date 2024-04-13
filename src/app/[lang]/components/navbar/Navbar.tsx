@@ -1,13 +1,13 @@
 import { getDictionary } from "@/lib/dictionary";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { Suspense } from "react";
 import { Locale } from "../../../../../i18n.config";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Skeleton } from "../ui/skeleton";
+import LogoNav from "./LogoNav";
 import SettingsNav from "./Settings/SettingsNav";
-import Image from 'next/image';
-import LogoNav from './LogoNav'
-
 
 export default async function NavBar({ lang }: { lang: Locale }) {
   const { navigation, components } = await getDictionary(lang);
@@ -16,30 +16,32 @@ export default async function NavBar({ lang }: { lang: Locale }) {
     <>
       <nav className="hidden flex-col gap-6 font-sans text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <div className="flex items-center gap-1 text-lg font-semibold md:mr-16 md:text-base">
-          <LogoNav />
-          <span className=" font-mono ">{navigation.title}</span>
+          <Suspense fallback={<Skeleton className="size-12 rounded-full" />}>
+            <LogoNav />
+          </Suspense>
+          <h1 className=" select-none font-mono ">{navigation.title}</h1>
         </div>
-        <Link href={"#home"} className="text-muted-foreground hover:text-foreground">
+        <Link href={"#home"} className="text-muted-foreground outline-none hover:text-foreground">
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.home}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground hover:text-foreground">
+        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.about}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground hover:text-foreground">
+        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.skills}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground hover:text-foreground">
+        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.projects}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground hover:text-foreground">
+        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.contact}
           </Button>
@@ -58,27 +60,27 @@ export default async function NavBar({ lang }: { lang: Locale }) {
               {/* <Image src={Logo} alt="Acme Inc" width={50} height={50} /> */}
               <span className="sr-only">Acme Inc</span>
             </Link>
-            <Link href={"#home"} className="text-muted-foreground hover:text-foreground">
+            <Link href={"#home"} className="text-muted-foreground outline-none hover:text-foreground">
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.home}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground hover:text-foreground">
+            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.about}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground hover:text-foreground">
+            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.skills}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground hover:text-foreground">
+            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.projects}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground hover:text-foreground">
+            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.contact}
               </Button>

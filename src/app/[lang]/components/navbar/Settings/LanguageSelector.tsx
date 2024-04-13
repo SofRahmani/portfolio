@@ -41,7 +41,7 @@ export function ToggleLaguage({ content, lang }: ToggleLaguageProps) {
           {i18n.locales.map(locale => {
             return (
               <Link key={locale} href={redirectedPathname(locale)}>
-                <DropdownMenuRadioItem value={locale}>{locale.toUpperCase()}</DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value={locale}>{locale === "fr" ? "Français" : "English"}</DropdownMenuRadioItem>
               </Link>
             );
           })}

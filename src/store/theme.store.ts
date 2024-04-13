@@ -6,6 +6,6 @@ type StoreTheme = {
 };
 
 export const useStoreTheme = create<StoreTheme>()(set => ({
-  theme: "light",
+  theme: "dark",
   toggleTheme: newTheme => set({ theme: newTheme })
 }));
