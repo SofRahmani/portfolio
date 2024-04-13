@@ -30,7 +30,7 @@ export function ToggleLaguage({ content, lang }: ToggleLaguageProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size={"icon"}>
+        <Button variant="outline" size={"sm"}>
           <Languages />
         </Button>
       </DropdownMenuTrigger>

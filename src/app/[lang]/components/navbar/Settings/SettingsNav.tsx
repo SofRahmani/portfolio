@@ -4,7 +4,7 @@ import { ModeToggle } from "./ToggleDarkMode";
 
 export default function SettingsNav({ content, lang }: ToggleLaguageProps) {
   return (
-    <div className=" flex flex-row items-center justify-center gap-2 ">
+    <div className=" flex flex-row items-center justify-end gap-2 ">
       <ModeToggle />
       <ToggleLaguage content={content} lang={lang} />
     </div>
