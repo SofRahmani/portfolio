@@ -12,9 +12,10 @@
 
   "pages": {
     "home": {
-      "title": "Gérer l'internationalisation dans Next.js",
-      "content": "Apprenez à configurer l'internationalisation dans votre application Next.js.",
-      "resume": "Mon CV"
+      "title": "Sofiane Rahmani",
+      "subtitle": "Développeur Web Frontend",
+      "content": "Bienvenue sur mon portfolio, je suis un développeur web frontend. Je suis passionné par le développement web et je suis toujours à la recherche de nouveaux défis. J'apprends constamment de nouvelles technologies et j'améliore mes compétences. Je suis actuellement à la recherche d'un emploi en tant que développeur frontend. N'hésitez pas à me contacter si vous êtes intéressé par mon profil.",
+      "resume": "Télécharger mon CV"
     }
   },
 
