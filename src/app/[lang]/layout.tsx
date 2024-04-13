@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang={params.lang} className=' !scroll-smooth ' suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <header className=" sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 ">
             <NavBar lang={params.lang} />
           </header>

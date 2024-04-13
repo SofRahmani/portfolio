@@ -1,9 +1,10 @@
 "use client";
+import { ToggleLaguageProps } from "@/types/ToggleLanguageType";
 import { Languages } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { i18n, Locale } from "../../../../../../i18n.config";
+import { i18n } from "../../../../../../i18n.config";
 import { Button } from "../../ui/button";
 import {
   DropdownMenu,
@@ -14,7 +15,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from "../../ui/dropdown-menu";
-import { ToggleLaguageProps } from '@/types/ToggleLanguageType';
 
 export function ToggleLaguage({ content, lang }: ToggleLaguageProps) {
   const [language, setLanguage] = useState(`${lang}`);
@@ -34,7 +34,7 @@ export function ToggleLaguage({ content, lang }: ToggleLaguageProps) {
           <Languages />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 font-sans">
+      <DropdownMenuContent className="w-fit font-sans" align="end">
         <DropdownMenuLabel>{content}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={language} onValueChange={setLanguage}>
