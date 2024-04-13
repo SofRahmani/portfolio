@@ -26,22 +26,26 @@ export default async function NavBar({ lang }: { lang: Locale }) {
             {navigation.home}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
-          <Button variant={"link"} className=" text-black dark:text-white ">
-            {navigation.about}
-          </Button>
-        </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
+        <Link
+          href={"#skills"}
+          className="w-fit text-muted-foreground outline-none hover:text-foreground"
+        >
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.skills}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
+        <Link
+          href={"#projects"}
+          className="w-fit text-muted-foreground outline-none hover:text-foreground"
+        >
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.projects}
           </Button>
         </Link>
-        <Link href={"#about"} className="w-fit text-muted-foreground outline-none hover:text-foreground">
+        <Link
+          href={"#contact"}
+          className="w-fit text-muted-foreground outline-none hover:text-foreground"
+        >
           <Button variant={"link"} className=" text-black dark:text-white ">
             {navigation.contact}
           </Button>
@@ -57,30 +61,37 @@ export default async function NavBar({ lang }: { lang: Locale }) {
         <SheetContent side="left">
           <nav className="grid gap-6 font-sans text-lg font-medium">
             <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
-              {/* <Image src={Logo} alt="Acme Inc" width={50} height={50} /> */}
-              <span className="sr-only">Acme Inc</span>
+              <LogoNav />
+              <span className="sr-only">{navigation.title}</span>
             </Link>
-            <Link href={"#home"} className="text-muted-foreground outline-none hover:text-foreground">
+            <Link
+              href={"#home"}
+              className="text-muted-foreground outline-none hover:text-foreground"
+            >
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.home}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
-              <Button variant={"link"} className=" text-black dark:text-white ">
-                {navigation.about}
-              </Button>
-            </Link>
-            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
+            <Link
+              href={"#skills"}
+              className="text-muted-foreground outline-none hover:text-foreground"
+            >
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.skills}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
+            <Link
+              href={"#projects"}
+              className="text-muted-foreground outline-none hover:text-foreground"
+            >
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.projects}
               </Button>
             </Link>
-            <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
+            <Link
+              href={"#contact"}
+              className="text-muted-foreground outline-none hover:text-foreground"
+            >
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.contact}
               </Button>
