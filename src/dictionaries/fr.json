@@ -2,19 +2,30 @@
   "navigation": {
     "home": "Accueil",
     "about": "À propos",
-    "lang": "Langue"
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact",
+    "lang": "Langue",
+    "sheet": "Bouton du menu de navigation",
+    "title": "Portfolio"
   },
 
   "pages": {
     "home": {
       "title": "Gérer l'internationalisation dans Next.js",
-      "content": "Apprenez à configurer l'internationalisation dans votre application Next.js."
+      "content": "Apprenez à configurer l'internationalisation dans votre application Next.js.",
+      "resume": "Mon CV"
     }
   },
 
   "components": {
     "button": {
       "home": "Accueil"
+    },
+    "toggleDarkMode": {
+      "dark": "Sombre",
+      "light": "Clair",
+      "system": "Système"
     }
   }
 }

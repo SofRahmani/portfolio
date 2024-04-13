@@ -3,6 +3,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
+import { useStoreTheme } from "@/store/theme.store";
 import { Button } from "../../ui/button";
 import {
   DropdownMenu,
@@ -11,10 +12,15 @@ import {
   DropdownMenuTrigger
 } from "../../ui/dropdown-menu";
 
-export function ModeToggle() {
-  const { setTheme } = useTheme();
+export interface ModeToggleProps {
+  lightLabel: string;
+  darkLabel: string;
+  systemLabel: string;
+}
 
-  // TODO: Add i18n labels
+export function ModeToggle({ lightLabel, darkLabel, systemLabel }: ModeToggleProps) {
+  const { setTheme } = useTheme();
+  const { toggleTheme } = useStoreTheme();
 
   return (
     <DropdownMenu>
@@ -25,10 +31,23 @@ export function ModeToggle() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className=' font-sans '>
-        <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
+      <DropdownMenuContent align="end" className=" font-sans ">
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("light");
+            toggleTheme("light");
+          }}
+        >
+          {lightLabel}
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("dark");
+            toggleTheme("dark");
+          }}
+        >
+          {darkLabel}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
