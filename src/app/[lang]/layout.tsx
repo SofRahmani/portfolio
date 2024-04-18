@@ -37,10 +37,10 @@ export default function RootLayout({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang} className=" !scroll-smooth " suppressHydrationWarning>
+    <html lang={params.lang} className=" !scroll-smooth selection:text-[#6d28d9] dark:selection:text-[#c084fc] " suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto_mono.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <header className=" sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 ">
+          <header className=" sticky top-0 z-50 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 ">
             <NavBar lang={params.lang} />
           </header>
           {children}
