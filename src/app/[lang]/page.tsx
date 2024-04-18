@@ -10,3 +10,4 @@ export default function Home({ params }: { params: { lang: Locale } }) {
     </main>
   );
 }
+

@@ -14,7 +14,7 @@ export default function BadgeLink({ Icon, url, name }: badgeLinkProps) {
     <Link href={url} target='_blank' >
       <Badge>
         <Icon size="20" className='mr-2' />
-        <span>{name}</span>
+        <span className=' select-none '>{name}</span>
       </Badge>
     </Link>
   );
