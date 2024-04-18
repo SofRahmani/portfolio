@@ -16,7 +16,7 @@ import {
   DropdownMenuTrigger
 } from "../../ui/dropdown-menu";
 
-export function ToggleLaguage({ content, lang }: ToggleLaguageProps) {
+export function ToggleLaguage({ content, lang, ariaLabel }: ToggleLaguageProps) {
   const [language, setLanguage] = useState(`${lang}`);
 
   const pathname = usePathname();
@@ -30,7 +30,7 @@ export function ToggleLaguage({ content, lang }: ToggleLaguageProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size={"sm"}>
+        <Button variant="outline" size={"sm"} aria-label={ariaLabel}>
           <Languages />
         </Button>
       </DropdownMenuTrigger>

@@ -107,6 +107,8 @@ export default async function NavBar({ lang }: { lang: Locale }) {
             lightLabel={components.toggleDarkMode.light}
             darkLabel={components.toggleDarkMode.dark}
             systemLabel={components.toggleDarkMode.system}
+            ariaLabelLang={components.toggleLanguage.ariaLabel}
+            ariaLabelTheme={components.toggleDarkMode.ariaLabel}
           />
         </div>
       </div>
