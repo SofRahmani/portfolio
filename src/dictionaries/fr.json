@@ -13,7 +13,7 @@
   "pages": {
     "home": {
       "title": "Sofiane Rahmani",
-      "subtitle": "Développeur Web Frontend",
+      "subtitle": "Développeur Frontend React | NextJS | TypeScript",
       "content": "Bienvenue sur mon portfolio, je suis un développeur web frontend. Je suis passionné par le développement web et je suis toujours à la recherche de nouveaux défis. J'apprends constamment de nouvelles technologies et j'améliore mes compétences. Je suis actuellement à la recherche d'un emploi en tant que développeur frontend. N'hésitez pas à me contacter si vous êtes intéressé par mon profil.",
       "resume": "Télécharger mon CV"
     }
@@ -26,7 +26,11 @@
     "toggleDarkMode": {
       "dark": "Sombre",
       "light": "Clair",
-      "system": "Système"
+      "system": "Système",
+      "ariaLabel": "Changer le thème"
+    },
+    "toggleLanguage": {
+      "ariaLabel": "Changer la langue"
     }
   }
 }

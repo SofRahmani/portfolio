@@ -13,7 +13,7 @@
   "pages": {
     "home": {
       "title": "Sofiane Rahmani",
-      "subtitle": "Frontend Web Developer",
+      "subtitle": "Frontend Developer React | NextJS | TypeScript",
       "content": "Welcome to my portfolio, I am a frontend web developer. I am passionate about web development and I am always looking for new challenges. I am constantly learning new technologies and improving my skills. I am currently looking for a job as a frontend developer. Feel free to contact me if you are interested in my profile.",
       "resume": "Download my resume"
     }
@@ -26,7 +26,11 @@
     "toggleDarkMode": {
       "dark": "Dark",
       "light": "Light",
-      "system": "System"
+      "system": "System",
+      "ariaLabel": "switch dark mode"
+    },
+    "toggleLanguage": {
+      "ariaLabel": "switch language"
     }
   }
 }
