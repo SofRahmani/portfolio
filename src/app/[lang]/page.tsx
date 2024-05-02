@@ -3,6 +3,7 @@ import Separator from './components/sections/Separator'
 import AboutSection from './components/sections/about_section/AboutSection'
 import ContactSection from './components/sections/contact_section/ContactSection'
 import HeroSection from "./components/sections/hero_section/HeroSection";
+import ProjectsSection from './components/sections/project_section/ProjectSection'
 import SkillsSection from './components/sections/skills_section/SkillsSection'
 
 export default function Home({ params }: { params: { lang: Locale } }) {
@@ -12,6 +13,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       <Separator />
       <AboutSection lang={params.lang} />
       <SkillsSection lang={params.lang} />
+      <ProjectsSection lang={params.lang} />
       <ContactSection lang={params.lang} />
     </main>
   );

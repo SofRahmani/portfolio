@@ -41,6 +41,10 @@
       "messagePlaceholder": "Hello Sofiane, I would like to talk to you about...",
       "send": "Send",
       "toast": "Your message has been sent successfully!"
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Here are some of my projects"
     }
   },
 

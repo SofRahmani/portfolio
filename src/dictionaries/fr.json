@@ -41,6 +41,10 @@
       "messagePlaceholder": "Bonjour Sofiane, je souhaite vous parler de...",
       "send": "Envoyer",
       "toast": "Votre message a bien été envoyé !"
+    },
+    "projects": {
+      "title": "Projets",
+      "subtitle": "Découvrez quelques-uns des projets sur lesquels j'ai travaillé."
     }
   },
 
