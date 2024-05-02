@@ -59,3 +59,17 @@
       @apply bg-background text-foreground;
     }
   }
+
+  q {
+    position: relative;
+    font-style: italic;
+  }
+  q::before {
+    position: absolute;
+    content: '\201C';
+    top: -20px;
+    left: -30px;
+    font-size: 3rem;
+  }
+
+
