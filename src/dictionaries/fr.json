@@ -14,8 +14,33 @@
     "home": {
       "title": "Sofiane Rahmani",
       "subtitle": "Développeur Frontend React | NextJS | TypeScript",
-      "content": "Bienvenue sur mon portfolio, je suis un développeur web frontend. Je suis passionné par le développement web et je suis toujours à la recherche de nouveaux défis. J'apprends constamment de nouvelles technologies et j'améliore mes compétences. Je suis actuellement à la recherche d'un emploi en tant que développeur frontend. N'hésitez pas à me contacter si vous êtes intéressé par mon profil.",
+      "content": "Transformer vos idées en réalités numériques impressionnantes – je suis Sofiane Rahmani, votre développeur frontend spécialisé en création d'applications web modernes et performantes.",
       "resume": "Télécharger mon CV"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "content": "Je m'appelle Sofiane Rahmani, fort d'une expertise en tant qu'expert d'un logiciel de gestion médical. Aujourd'hui, en tant que développeur web frontend autodidacte, je suis spécialisé dans la création d'applications web modernes et performantes. Passionné par l'innovation et toujours avide d'apprendre, je m'engage à fournir des solutions web de haute qualité pour répondre aux besoins spécifiques de chaque projet. Découvrez comment je peux transformer vos idées en réalités numériques impressionnantes."
+    },
+    "skills": {
+      "title": "Compétences",
+      "subtitle": "Voici quelques-unes des compétences que j'ai acquises au cours de mes études et de mes expériences professionnelles."
+    },
+    "contact": {
+      "title": "Me contacter",
+      "subtitle": "Vous avez un projet en tête ou vous souhaitez simplement discuter ? N'hésitez pas à me contacter !",
+      "email": "Votre adresse e-mail",
+      "emailDescription": "Je vous répondrai sur cette adresse.",
+      "object": "Objet du mail",
+      "objectDescription": "De quoi souhaitez-vous me parler ?",
+      "objectJob": "Je recherche un développeur pour un poste en CDI ou CDD",
+      "objectProject": "Je recherche un developper pour réaliser mon projet personnel ou professionnel",
+      "objectOther": "Autre demande",
+      "objectMission": "Je recherche un développeur pour une mission freelance",
+      "message": "Votre message",
+      "messageDescription": "Décrivez-moi votre projet ou votre demande.",
+      "messagePlaceholder": "Bonjour Sofiane, je souhaite vous parler de...",
+      "send": "Envoyer",
+      "toast": "Votre message a bien été envoyé !"
     }
   },
 

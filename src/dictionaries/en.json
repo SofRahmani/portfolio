@@ -14,8 +14,33 @@
     "home": {
       "title": "Sofiane Rahmani",
       "subtitle": "Frontend Developer React | NextJS | TypeScript",
-      "content": "Welcome to my portfolio, I am a frontend web developer. I am passionate about web development and I am always looking for new challenges. I am constantly learning new technologies and improving my skills. I am currently looking for a job as a frontend developer. Feel free to contact me if you are interested in my profile.",
+      "content": "Turning your ideas into impressive digital realities – I'm Sofiane Rahmani, your frontend web developer specializing in creating modern and efficient web applications.",
       "resume": "Download my resume"
+    },
+    "about": {
+      "title": "About me",
+      "content": "My name is Sofiane Rahmani, with a background as an expert in medical management software. Today, as a self-taught frontend web developer, I specialize in creating modern and efficient web applications. Passionate about innovation and always eager to learn, I am committed to delivering high-quality web solutions to meet the specific needs of each project. Discover how I can turn your ideas into impressive digital realities."
+    },
+    "skills": {
+      "title": "Skills",
+      "subtitle": "Here are some of the technologies I use"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Do you have a project in mind or just want to chat? Feel free to contact me!",
+      "email": "Your email address",
+      "emailDescription": "I will reply to you at this address.",
+      "object": "Subject of the email",
+      "objectDescription": "What would you like to talk to me about?",
+      "objectJob": "I'm looking for a developer for a permanent or temporary position",
+      "objectProject": "I'm looking for a developer to realize my personal or professional project",
+      "objectOther": "Other request",
+      "objectMission": "I'm looking for a developer for a freelance mission",
+      "message": "Your message",
+      "messageDescription": "Describe your project or request to me.",
+      "messagePlaceholder": "Hello Sofiane, I would like to talk to you about...",
+      "send": "Send",
+      "toast": "Your message has been sent successfully!"
     }
   },
 
