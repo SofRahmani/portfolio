@@ -20,7 +20,6 @@ import { Input } from "../../ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../ui/select";
 import { Textarea } from "../../ui/textarea";
 import { sendEmail } from "./sendEmail.action";
-import { title } from '@/style/site';
 
 export interface ContactFormProps {
   title: string;
@@ -82,7 +81,9 @@ export default function ContactForm({
   return (
     <Card className=" w-full md:w-3/4">
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent">
+          {title}
+        </CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
@@ -99,9 +100,7 @@ export default function ContactForm({
                   <FormControl>
                     <Input placeholder="elon.musk@gmail.com" {...field} />
                   </FormControl>
-                  <FormDescription>
-                    {emailDescription}
-                  </FormDescription>
+                  <FormDescription>{emailDescription}</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -131,9 +130,7 @@ export default function ContactForm({
                       <SelectItem value="Autre demande">{objectOther}</SelectItem>
                     </SelectContent>
                   </Select>
-                  <FormDescription>
-                    {objectDescription}
-                  </FormDescription>
+                  <FormDescription>{objectDescription}</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -149,9 +146,7 @@ export default function ContactForm({
                   <FormControl>
                     <Textarea placeholder={messagePlaceholder} maxLength={5000} {...field} />
                   </FormControl>
-                  <FormDescription>
-                    {messageDescription}
-                  </FormDescription>
+                  <FormDescription>{messageDescription}</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
