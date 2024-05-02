@@ -8,7 +8,7 @@ export default async function ContactSection({ lang }: { lang: Locale }) {
   return (
     <section
       id="contact"
-      className=" relative z-40 flex size-full scroll-mt-0.5 flex-col items-center justify-center gap-6 p-8 font-sans md:scroll-mt-96 "
+      className=" relative z-40 mb-10 flex size-full flex-col items-center justify-center gap-6 p-8 font-sans "
     >
       <ContactForm
         title={pages.contact.title}
