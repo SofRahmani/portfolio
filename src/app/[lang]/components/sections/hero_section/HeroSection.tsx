@@ -7,6 +7,8 @@ import ProfilPic from "../../../../../../public/sofiane.jpg";
 import { Button } from "../../ui/button";
 import AllBadges from "./AllBadges";
 import { GradientL, GradientR } from "./Gradients";
+import { Reveal } from '@/utils/Reveal';
+import ResumeButton from './ResumeButton'
 
 export default async function HeroSection({ lang }: { lang: Locale }) {
   const { pages } = await getDictionary(lang);
@@ -14,7 +16,7 @@ export default async function HeroSection({ lang }: { lang: Locale }) {
   return (
     <section
       id="home"
-      className=" relative z-40 flex size-full flex-col items-center justify-center p-8 font-sans md:mt-20 "
+      className=" relative z-40 flex size-full scroll-mt-[100rem] flex-col items-center justify-center p-8 font-sans md:mt-20 "
     >
       <GradientL />
       <GradientR />
@@ -23,18 +25,25 @@ export default async function HeroSection({ lang }: { lang: Locale }) {
           src={ProfilPic}
           height={250}
           width={250}
+          quality={100}
           alt="Sofiane Rahmani's photo"
           className=" z-40 rounded-full border-2 border-violet-700 shadow-indigo-700 drop-shadow-md"
         />
         <div className=" z-40 flex flex-col md:w-2/4 ">
-          <h2 className={` ${title({ color: "violet", size: "lg" })} select-none `}>{pages.home.title}</h2>
-          <h3 className={` ${subtitle()} font-mono `}>{pages.home.subtitle}</h3>
-          <p className=" mt-4 text-justify ">{pages.home.content}</p>
+          <Reveal width='w-fit'>
+            <h2 className={` ${title({ color: "violet", size: "lg" })} select-none `}>
+              {pages.home.title}
+            </h2>
+          </Reveal>
+          <Reveal width='w-fit'>
+            <h3 className={` ${subtitle()} font-mono `}>{pages.home.subtitle}</h3>
+          </Reveal>
+          <Reveal width='w-fit'>
+            <q className=" mt-4 text-center md:text-justify ">{pages.home.content}</q>
+          </Reveal>
           <div className=" mt-6 flex flex-row flex-wrap items-center justify-between gap-4 ">
             <AllBadges />
-            <Link href={"https://resume.sofiane-rahmani.com"} target="_blank">
-              <Button variant={"outline"}>{pages.home.resume}</Button>
-            </Link>
+            <ResumeButton content={pages.home.resume} />
           </div>
         </div>
       </div>
