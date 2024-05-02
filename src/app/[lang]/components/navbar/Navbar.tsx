@@ -26,6 +26,11 @@ export default async function NavBar({ lang }: { lang: Locale }) {
             {navigation.home}
           </Button>
         </Link>
+        <Link href={"#about"} className="text-muted-foreground outline-none hover:text-foreground">
+          <Button variant={"link"} className=" text-black dark:text-white ">
+            {navigation.about}
+          </Button>
+        </Link>
         <Link
           href={"#skills"}
           className="w-fit text-muted-foreground outline-none hover:text-foreground"
@@ -70,6 +75,14 @@ export default async function NavBar({ lang }: { lang: Locale }) {
             >
               <Button variant={"link"} className=" text-black dark:text-white ">
                 {navigation.home}
+              </Button>
+            </Link>
+            <Link
+              href={"#about"}
+              className="text-muted-foreground outline-none hover:text-foreground"
+            >
+              <Button variant={"link"} className=" text-black dark:text-white ">
+                {navigation.about}
               </Button>
             </Link>
             <Link
