@@ -1,26 +1,25 @@
-'use client'
+"use client";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const fadeInAnimationVariants = {
   hidden: {
     opacity: 0,
-    height: 0
+    y: -30
   },
   visible: () => ({
     opacity: 1,
-    height: 100,
+    y: 0,
     transition: {
-      duration: 0.6
+      duration: 0.5
     }
   })
 };
 
 export default function Separator() {
-
   const control = useAnimation();
-  const [ ref, inView ] = useInView();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
@@ -28,16 +27,17 @@ export default function Separator() {
     } else {
       control.start("hidden");
     }
-
-  }, [control, inView])
+  }, [control, inView]);
 
   return (
-    <motion.div
-      className=" h-28 w-1 rounded-full bg-violet-700 "
-      ref={ref}
-      variants={fadeInAnimationVariants}
-      initial="hidden"
-      animate={control}
-    />
+    <div className=" flex h-28 w-full items-center justify-center overflow-hidden ">
+      <motion.div
+        className=" h-full w-1 rounded-full bg-violet-700 "
+        ref={ref}
+        animate={control}
+        initial="hidden"
+        variants={fadeInAnimationVariants}
+      />
+    </div>
   );
 }
