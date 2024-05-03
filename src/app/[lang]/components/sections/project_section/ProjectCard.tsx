@@ -30,8 +30,8 @@ export default function ProjectCard({ name, description, skills, image, url }: P
       }}
       className=" group mb-3 last:mb-0 sm:mb-8 "
     >
-      <article className=" relative  max-w-2xl overflow-hidden rounded-md border border-white/5 bg-gray-200 transition hover:bg-gray-300 group-even:pl-8 dark:bg-gray-900  dark:hover:bg-gray-800 sm:h-80 sm:pr-8 ">
-        <div className=" flex h-full flex-col px-5 pb-7 pt-4 group-even:ml-72 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-6">
+      <article className=" relative max-w-2xl overflow-hidden rounded-md border border-white/5 bg-gray-200 transition hover:bg-gray-300 md:group-even:pl-8 dark:bg-gray-900 dark:hover:bg-gray-800 max-sm:flex  max-sm:flex-col sm:h-80 sm:pr-8 ">
+        <div className=" flex h-full flex-col px-5 pb-7 pt-4 md:group-even:ml-72 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-6">
           <h3 className="text-2xl font-semibold">{name}</h3>
           <p className=" mt-2 leading-relaxed ">{description}</p>
           <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
@@ -46,9 +46,9 @@ export default function ProjectCard({ name, description, skills, image, url }: P
           </ul>
         </div>
 
-        <Link href={url} target='_blank'>
+        <Link href={url} target="_blank">
           <Image
-            className=" absolute -right-40 top-14 w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 "
+            className=" hidden md:block absolute -right-40 top-14 w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 "
             src={image}
             alt={`${name}'s image`}
             quality={95}
