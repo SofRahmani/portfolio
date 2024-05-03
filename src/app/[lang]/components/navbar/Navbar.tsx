@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { Locale } from "../../../../../i18n.config";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { Skeleton } from "../ui/skeleton";
+import { Skeleton } from '@/components/ui/skeleton';
 import LogoNav from "./LogoNav";
 import SettingsNav from "./Settings/SettingsNav";
 
