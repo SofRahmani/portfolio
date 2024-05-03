@@ -4,6 +4,7 @@ import { inter, roboto_mono } from "../../style/fonts";
 import "../../style/globals.css";
 import NavBar from "./components/navbar/Navbar";
 import { ThemeProvider } from "./providers";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sofiane-rahmani.com/"),
@@ -44,6 +45,7 @@ export default function RootLayout({
             <NavBar lang={params.lang} />
           </header>
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
