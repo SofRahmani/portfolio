@@ -23,8 +23,27 @@ export const metadata: Metadata = {
 
   icons: {
     icon: "/favicon.ico"
-  }
+  },
+
+  openGraph: {
+    type: "website",
+    url: "https://sofiane-rahmani.com",
+    title: "Developpeur Web Frontend",
+    siteName: "Sofiane Rahmani - Portfolio",
+    description:
+      "Transformez vos idées en réalités numériques impressionnantes – je suis Sofiane Rahmani, votre développeur frontend spécialisé en création d'applications web modernes et performantes.",
+    images: [
+      {
+        url: "https://sofiane-rahmani.com/card.jpg",
+        secureUrl: "https://www.sofiane-rahmani.com/card.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sofiane Rahmani - Portfolio's card image",
+      },
+    ],
+  },
 };
+
 
 export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
