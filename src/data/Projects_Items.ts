@@ -1,6 +1,7 @@
 import Letter from "../../public/projects/letter.png";
 import Docs from "../../public/projects/docs.png";
 import Resume from "../../public/projects/resume.png";
+import Todos from '../../public/projects/todos.png'
 
 export const SIDES_PROJECTS = [
   {
@@ -22,12 +23,12 @@ export const SIDES_PROJECTS = [
     image: Docs
   },
   {
-    name: "My resume",
-    slug: "my-resume",
-    descriptionFR: "Un curriculum vitae sous forme de site, car être développeur, c'est avant tout rendre les choses simples bien plus amusantes.",
-    descriptionEN: "A curriculum vitae in the form of a website, because being a developer is primarily about making things simple much more fun.",
-    skills: ["Next JS", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    url: "https://resume.sofiane-rahmani.com/",
-    image: Resume
+    name: "Todos",
+    slug: "todos",
+    descriptionFR: "Une application de gestion de tâches simple et minimaliste, parce que parfois, il suffit de peu pour être efficace.",
+    descriptionEN: "A simple and minimalist task management application, because sometimes, less is more.",
+    skills: ["Next JS", "React", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Auth JS"],
+    url: "https://github.com/SofRahmani/todos",
+    image: Todos
   }
 ];
