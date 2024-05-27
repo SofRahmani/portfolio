@@ -98,7 +98,7 @@ export default function ContactForm({
                     {email} <span className="text-primary dark:text-violet-400">*</span>{" "}
                   </FormLabel>
                   <FormControl>
-                    <Input placeholder="elon.musk@gmail.com" {...field} />
+                    <Input placeholder="elon.musk@gmail.com" type='email' {...field} />
                   </FormControl>
                   <FormDescription>{emailDescription}</FormDescription>
                   <FormMessage />
