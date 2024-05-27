@@ -19,6 +19,7 @@ import {
 import { Input } from "../../ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../ui/select";
 import { Textarea } from "../../ui/textarea";
+import LengthMessage from "./LengthMessage";
 import { sendEmail } from "./sendEmail.action";
 
 export interface ContactFormProps {
@@ -98,7 +99,7 @@ export default function ContactForm({
                     {email} <span className="text-primary dark:text-violet-400">*</span>{" "}
                   </FormLabel>
                   <FormControl>
-                    <Input placeholder="elon.musk@gmail.com" type='email' {...field} />
+                    <Input placeholder="elon.musk@gmail.com" type="email" {...field} />
                   </FormControl>
                   <FormDescription>{emailDescription}</FormDescription>
                   <FormMessage />
@@ -144,9 +145,12 @@ export default function ContactForm({
                     {message} <span className="text-primary dark:text-violet-400">*</span>{" "}
                   </FormLabel>
                   <FormControl>
-                    <Textarea placeholder={messagePlaceholder} maxLength={5000} {...field} />
+                    <Textarea placeholder={messagePlaceholder} {...field} />
                   </FormControl>
-                  <FormDescription>{messageDescription}</FormDescription>
+                  <div className='flex justify-between'>
+                    <FormDescription>{messageDescription}</FormDescription>
+                    <LengthMessage limite={5000} message={field.value.length} />
+                  </div>
                   <FormMessage />
                 </FormItem>
               )}
