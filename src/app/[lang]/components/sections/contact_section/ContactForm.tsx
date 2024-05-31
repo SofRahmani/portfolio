@@ -149,7 +149,7 @@ export default function ContactForm({
                   </FormControl>
                   <div className='flex justify-between'>
                     <FormDescription>{messageDescription}</FormDescription>
-                    <LengthMessage limite={5000} message={field.value.length} />
+                    <LengthMessage limite={2000} message={field.value.length} />
                   </div>
                   <FormMessage />
                 </FormItem>
