@@ -5,6 +5,16 @@ import Todos from "../../public/projects/todos.png";
 
 export const SIDES_PROJECTS = [
   {
+    name: "QR Code Generator",
+    slug: "qrcode-generator",
+    descriptionFR:
+      "Une application permettant de générer des QR codes personnalisable à partir de texte ou d'un lien.",
+    descriptionEN: "A application allowing to generate customizable QR codes from text or a link.",
+    skills: ["Next JS", "React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+    url: "https://qrcode.sofiane-rahmani.com/",
+    image: QrCode
+  },
+  {
     name: "Letter or Number",
     slug: "letter-or-number",
     descriptionFR:
@@ -14,17 +24,6 @@ export const SIDES_PROJECTS = [
     skills: ["Next JS", "React", "TypeScript", "Tailwind CSS"],
     url: "https://www.letter-or-number.com/fr",
     image: Letter
-  },
-
-  {
-    name: "QR Code Generator",
-    slug: "qrcode-generator",
-    descriptionFR:
-      "Une application permettant de générer des QR codes personnalisable à partir de texte ou d'un lien.",
-    descriptionEN: "A application allowing to generate customizable QR codes from text or a link.",
-    skills: ["Next JS", "React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-    url: "https://qrcode.sofiane-rahmani.com/",
-    image: QrCode
   },
   {
     name: "Todos",
