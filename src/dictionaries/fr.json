@@ -45,6 +45,9 @@
     "projects": {
       "title": "Projets",
       "subtitle": "Découvrez quelques-uns des projets sur lesquels j'ai travaillé."
+    },
+    "testimonials": {
+      "title": "Mes avis"
     }
   },
 
