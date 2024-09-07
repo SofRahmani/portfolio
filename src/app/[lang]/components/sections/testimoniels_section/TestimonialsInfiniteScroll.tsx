@@ -44,7 +44,7 @@ export function TestimonialsInfiniteScroll({ noTestimonials }: TestimonialsInfin
   }
 
   return (
-    <div className="relative flex h-full items-center justify-center overflow-hidden rounded-md antialiased">
+    <div className="relative flex size-full items-center justify-center overflow-hidden rounded-md antialiased">
       <Carousel
         orientation="horizontal"
         opts={{
@@ -56,7 +56,7 @@ export function TestimonialsInfiniteScroll({ noTestimonials }: TestimonialsInfin
             delay: 7000
           })
         ]}
-        className="w-3/4 lg:w-3/4"
+        className="w-full lg:w-3/4"
       >
         <CarouselContent>
           {data.map((item: any, index: number) => (
