@@ -48,6 +48,14 @@ export default async function NavBar({ lang }: { lang: Locale }) {
           </Button>
         </Link>
         <Link
+          href={"#testimonials"}
+          className="w-fit text-muted-foreground outline-none hover:text-foreground"
+        >
+          <Button variant={"link"} className=" text-black dark:text-white ">
+            {navigation.testimonials}
+          </Button>
+        </Link>
+        <Link
           href={"#contact"}
           className="w-fit text-muted-foreground outline-none hover:text-foreground"
         >

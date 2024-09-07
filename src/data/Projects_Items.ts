@@ -1,7 +1,7 @@
 import Docs from "../../public/projects/docs.png";
 import Letter from "../../public/projects/letter.png";
 import QrCode from "../../public/projects/qrcode.png";
-import Todos from "../../public/projects/todos.png";
+import PackPlotter from "../../public/projects/packplotter.png";
 
 export const SIDES_PROJECTS = [
   {
@@ -15,6 +15,16 @@ export const SIDES_PROJECTS = [
     image: QrCode
   },
   {
+    name: "PackPlotter",
+    slug: "pack-plotter",
+    descriptionFR:
+      "Déménager devient plus facile avec PackPlotter, une application permettant de gérer vos cartons et leur contenu de façon simple, rapide et sécurisé.",
+    descriptionEN: "Moving becomes easier with PackPlotter, an app that allows you to manage your boxes and their contents in a simple, quick, and secure way.",
+    skills: ["Next JS", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Auth JS"],
+    url: "https://www.packplotter.app",
+    image: PackPlotter
+  },
+  {
     name: "Letter or Number",
     slug: "letter-or-number",
     descriptionFR:
@@ -24,17 +34,6 @@ export const SIDES_PROJECTS = [
     skills: ["Next JS", "React", "TypeScript", "Tailwind CSS"],
     url: "https://www.letter-or-number.com/fr",
     image: Letter
-  },
-  {
-    name: "Todos",
-    slug: "todos",
-    descriptionFR:
-      "Une application de gestion de tâches simple et minimaliste, parce que parfois, il suffit de peu pour être efficace.",
-    descriptionEN:
-      "A simple and minimalist task management application, because sometimes, less is more.",
-    skills: ["Next JS", "React", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Auth JS"],
-    url: "https://github.com/SofRahmani/todos",
-    image: Todos
   },
   {
     name: "My Docs",

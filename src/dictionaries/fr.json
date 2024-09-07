@@ -4,6 +4,7 @@
     "about": "À propos",
     "skills": "Compétences",
     "projects": "Projets",
+    "testimonials": "Avis",
     "contact": "Contact",
     "lang": "Langue",
     "sheet": "Bouton du menu de navigation",
@@ -45,6 +46,10 @@
     "projects": {
       "title": "Projets",
       "subtitle": "Découvrez quelques-uns des projets sur lesquels j'ai travaillé."
+    },
+    "testimonials": {
+      "title": "Mes avis",
+      "noTestimonials": "Aucun avis trouvé."
     }
   },
 
