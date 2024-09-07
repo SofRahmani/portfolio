@@ -48,7 +48,8 @@
       "subtitle": "Découvrez quelques-uns des projets sur lesquels j'ai travaillé."
     },
     "testimonials": {
-      "title": "Mes avis"
+      "title": "Mes avis",
+      "noTestimonials": "Aucun avis trouvé."
     }
   },
 

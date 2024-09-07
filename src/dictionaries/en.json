@@ -48,7 +48,8 @@
       "subtitle": "Here are some of my projects"
     },
     "testimonials": {
-      "title": "My testimonials"
+      "title": "My testimonials",
+      "noTestimonials": "No testimonials found."
     }
   },
 
