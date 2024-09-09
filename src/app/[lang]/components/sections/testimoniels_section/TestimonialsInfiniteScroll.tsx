@@ -61,9 +61,9 @@ export function TestimonialsInfiniteScroll({ noTestimonials }: TestimonialsInfin
         <CarouselContent>
           {data.map((item: any, index: number) => (
             <CarouselItem key={index} className="lg:basis-1/2">
-              <Card className=" size-full">
+              <Card className=" size-full select-none">
                 <CardHeader>
-                  <CardTitle className="bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent">
+                  <CardTitle className="bg-gradient-to-b from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">
                     {item.name}
                   </CardTitle>
                   <CardDescription>{item.title}</CardDescription>
